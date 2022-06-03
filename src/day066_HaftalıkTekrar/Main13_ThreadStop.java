@@ -39,7 +39,9 @@ public class Main13_ThreadStop implements Runnable{
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        main13.doStop();
+        if(main13.doStop()){
+            System.out.println("Thread durduruldu.");
+        }
         //thread.stop(); kullanmıyoruz.
 
     }
